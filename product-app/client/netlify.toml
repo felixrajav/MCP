@@ -1,0 +1,9 @@
+[build]
+  base = "client"  # Adjust if your app is in a subfolder like 'client'
+  command = "npm run build"  # Or your build script
+  publish = "client/dist"  # Path to built output
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
