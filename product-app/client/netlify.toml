@@ -1,9 +1,11 @@
+@"
 [build]
-  base = "client"  # Adjust if your app is in a subfolder like 'client'
-  command = "npm run build"  # Or your build script
-  publish = "client/dist"  # Path to built output
+  base = "client"
+  command = "npm run build"
+  publish = "client/dist"
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+"@ | Out-File -FilePath "netlify.toml" -Encoding utf8
