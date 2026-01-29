@@ -1,0 +1,9 @@
+[build]
+  base = "product-app/client"
+  command = "npm run build"
+  publish = "product-app/client/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
