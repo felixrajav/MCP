@@ -1,0 +1,8 @@
+name = "product-app"
+compatibility_date = "2026-01-30"
+
+[build]
+command = "cd product-app/client && npm install && npm run build"
+
+[assets]
+directory = "./product-app/client/dist"
