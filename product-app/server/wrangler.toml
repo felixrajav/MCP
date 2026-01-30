@@ -1,0 +1,12 @@
+name = "product-app-backend"
+main = "src/worker.js"
+compatibility_date = "2026-01-30"
+
+# Environment variables (will be set via dashboard)
+[vars]
+NODE_ENV = "production"
+
+# KV namespace for sessions (optional)
+# [[kv_namespaces]]
+# binding = "SESSIONS"
+# id = "your-kv-id"

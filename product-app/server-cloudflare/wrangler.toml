@@ -1,0 +1,10 @@
+name = "product-app-backend"
+main = "src/index.js"
+compatibility_date = "2026-01-30"
+node_compat = true
+
+[vars]
+NODE_ENV = "production"
+
+# Add these secrets via: wrangler secret put MONGODB_URI
+# wrangler secret put JWT_SECRET
